@@ -1,0 +1,41 @@
+.App{
+  margin : 20px 20px;
+  display:grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+/* card */
+.card{
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 20px;
+  margin: 10px;
+  background-color: rgb(235, 225, 225);
+}
+.card .card-header{
+  font-size: 40px;
+  font-weight: bold;
+}
+.general-info  > h4{
+  font-size: 30px;
+}
+.general-info .general-info-inner  span{
+  font-weight: bold;
+}
+
+/* media query */
+@media screen and (max-width: 900px) {
+  .App{
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media screen and (max-width: 500px) {
+  .App{
+    grid-template-columns: 1fr;
+  }
+}
+
+/* @keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+} */
